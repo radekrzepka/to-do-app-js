@@ -1,0 +1,183 @@
+@import "_vars.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+body {
+    background: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70%;
+    margin-top: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $whiteBackgroundColor;
+    box-shadow: 0px 0px 20px 5px #aaa;
+}
+
+.main--header {
+    font-size: 50px;
+    color: $blackFontColor;
+    margin: 20px 0;
+}
+
+.form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form * {
+    margin-right: 5px;
+}
+
+.form--inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form--title {
+    padding-right: 50px;
+    height: 40px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+
+    &::placeholder {
+        font-size: 16px;
+    }
+}
+
+.form--button {
+    margin-left: -50px;
+    font-size: 13px;
+    height: 40px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+}
+
+.form--date {
+    height: 40px;
+    border: 2px solid black;
+    padding:10px;
+}
+
+.form--warning {
+    color: $warningFontColor;
+}
+
+.tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    background-color: $whiteBackgroundColor;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;   
+    padding: 10px;
+}
+
+.task--header {
+    font-size: 18px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.task--date {
+    font-size: 18px;
+}
+
+.task--text {
+    display: flex;
+    align-items: flex-end;
+}
+
+.task--icon {
+    height: 30px;
+    cursor: pointer;
+}
+
+.task--header--unactive {
+    color: $greyFontColor;
+    text-decoration: line-through;
+}
+
+.task--date--unactive {
+    color: $greyFontColor;
+    text-decoration: line-through;
+}
+
+@media(max-width: 1024px) {
+    .main--header {
+        font-size: 30px;
+    }
+
+    .task--text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task--header {
+        margin-bottom: 5px;
+    }
+
+    .form--inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form--inputs * {
+        margin: 5px 0;
+    }
+
+    .form--button {
+        margin: 0;
+        width: 50%;
+    }
+
+    .form--title {
+        width: 100%;
+    }
+
+    .form--date {
+        width: 50%;
+    }
+
+    .task {
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

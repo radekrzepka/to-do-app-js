@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 70%;
+  margin-top: 25px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 20px 5px #aaa;
+          box-shadow: 0px 0px 20px 5px #aaa;
+}
+
+.main--header {
+  font-size: 50px;
+  color: #000;
+  margin: 20px 0;
+}
+
+.form {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form * {
+  margin-right: 5px;
+}
+
+.form--inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form--title {
+  padding-right: 50px;
+  height: 40px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+}
+
+.form--title::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.form--title:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.form--title::-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.form--title::placeholder {
+  font-size: 16px;
+}
+
+.form--button {
+  margin-left: -50px;
+  font-size: 13px;
+  height: 40px;
+  width: 80px;
+  border: 2px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  outline: none;
+}
+
+.form--date {
+  height: 40px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.form--warning {
+  color: #470909;
+}
+
+.tasks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task {
+  background-color: #FFF;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.task--header {
+  font-size: 18px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.task--date {
+  font-size: 18px;
+}
+
+.task--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.task--icon {
+  height: 30px;
+  cursor: pointer;
+}
+
+.task--header--unactive {
+  color: #5f5e5e;
+  text-decoration: line-through;
+}
+
+.task--date--unactive {
+  color: #5f5e5e;
+  text-decoration: line-through;
+}
+
+@media (max-width: 1024px) {
+  .main--header {
+    font-size: 30px;
+  }
+  .task--text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .task--header {
+    margin-bottom: 5px;
+  }
+  .form--inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form--inputs * {
+    margin: 5px 0;
+  }
+  .form--button {
+    margin: 0;
+    width: 50%;
+  }
+  .form--title {
+    width: 100%;
+  }
+  .form--date {
+    width: 50%;
+  }
+  .task {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main--header">TO DO LIST</h1>
+        <form class="form">
+            <div class="form--inputs">
+                <input type="text" placeholder="Nazwa zadania" class="form--title" required>
+                <button class="form--button" type="button">Dodaj</button>
+                <input type="datetime-local" class="form--date" required>
+            </div>
+            <p class="form--warning"></p>
+        </form>
+        <div class="tasks">
+        </div>
+    </div>
+</body>
+</html>
