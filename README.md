@@ -2,7 +2,7 @@
 A page that allows you to store your to-do items. Data is stored in local storage so that tasks do not disappear when the page is refreshed.
 
 ## Technologies
-- HTML & CSS
+- HTML & Sass
 - JavaScript
 
 ## Live
