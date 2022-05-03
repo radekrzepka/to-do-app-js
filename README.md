@@ -6,4 +6,4 @@ A page that allows you to store your to-do items. Data is stored in local storag
 - JavaScript
 
 ## Live
-https://radekrzepka.github.io/to_do_app_vanilla_js/
+https://radekrzepka.github.io/to-do-app-js/
